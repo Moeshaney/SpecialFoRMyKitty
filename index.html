@@ -21,8 +21,8 @@
 
         document.getElementById('hideButton').addEventListener('click', function() {
             this.style.display = 'none';
+            sessionStorage.setItem('hideButtonClicked', 'true');
         });
     </script>
 </body>
 </html>
-
