@@ -15,9 +15,14 @@
         </div>
     </div>
     <script>
+        if (sessionStorage.getItem('hideButtonClicked') === 'true') {
+            document.getElementById('hideButton').style.display = 'none';
+        }
+
         document.getElementById('hideButton').addEventListener('click', function() {
             this.style.display = 'none';
         });
     </script>
 </body>
 </html>
+
