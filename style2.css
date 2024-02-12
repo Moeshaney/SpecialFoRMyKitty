@@ -1,0 +1,28 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-image: url('1111.gif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Protest Riot', cursive;
+    text-align: center;
+    color: #FFC0CB;
+}
+
+.timer-container {
+    text-align: center;
+}
+
+.timer {
+    font-size: 2em;
+    margin-top: 50px;
+}

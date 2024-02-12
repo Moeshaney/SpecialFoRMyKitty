@@ -1,0 +1,27 @@
+
+.centered-gif {
+    display: block;
+    margin: 0 auto; 
+ background-color: #f0f0f0;
+    max-width: 100%; 
+}
+
+.button-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.button {
+    display: inline-block;
+    background-color: #FF69B4;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    margin: 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #FFB6C1;
+}

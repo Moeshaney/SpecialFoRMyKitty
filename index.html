@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример веб-сайта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>will you be my valentine?</h1>
+        <img src="https://cdn.discordapp.com/attachments/437468321093255178/1206609655573385216/123123.gif?ex=65dca1cf&is=65ca2ccf&hm=8c989d6ec434173750594fc482b91888f4d3064f493836310154f41516a1d351&" alt="Ваша гифка">
+        <div class="buttons">
+            <a href="web2.html" class="button">yes</a>
+            <a href="web3.html" class="button" id="hideButton">No i dont want (-_-)</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('hideButton').addEventListener('click', function() {
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
