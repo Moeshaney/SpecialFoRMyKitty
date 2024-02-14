@@ -1,12 +1,11 @@
 function updateTimer() {
     const now = new Date();
-    let nextFeb14 = new Date(now.getFullYear(), 1, 14, 19, 0, 0);
+    const feb14 = new Date(now.getFullYear(), 1, 14, 19, 0, 0); // 14 февраля в 19:00 текущего года
+    let diff = feb14 - now;
 
-    if (now.getTime() > nextFeb14.getTime()) {
-        nextFeb14 = new Date(now.getFullYear() + 1, 1, 14, 19, 0, 0);
+    if (diff < 0) {
+        diff = 0; // Если текущая дата после 14 февраля, устанавливаем разницу в 0
     }
-
-    const diff = nextFeb14 - now;
 
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
